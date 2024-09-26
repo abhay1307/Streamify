@@ -1,0 +1,117 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    position: relative;
+  }
+  
+  .header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .header__menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .header__nav {
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Prevents overflow of menu items */
+  }
+  
+  .header__nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .header__nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .header__auth {
+    display: flex;
+  }
+  
+  .header__button {
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .header__button:hover {
+    background-color: #f40612;
+  }
+  
+  .header__button--signin {
+    background-color: #333;
+  }
+  
+  .header__button--signin:hover {
+    background-color: #555;
+  }
+  
+  /* Mobile Menu Styles */
+  .header__nav {
+    display: flex;
+    flex-direction: row; /* Default for larger screens */
+  }
+  
+  .header__nav--open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 0;
+    background-color: #111;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Ensure the menu is above other content */
+    max-height: 80vh; /* Limit the height to prevent excessive scrolling */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+  }
+  
+  .header__nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  /* Media Query for Mobile Screens */
+  @media (max-width: 768px) {
+    .header__menu-icon {
+      display: block;
+    }
+  
+    .header__nav {
+      display: none;
+    }
+  
+    .header__nav--open {
+      display: flex;
+    }
+  
+    .header__auth {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .header__button {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  

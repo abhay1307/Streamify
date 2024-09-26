@@ -1,0 +1,36 @@
+.sidemenu {
+    width: 250px;
+    background-color: #090909;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  .sidemenu__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e50914;
+    margin-bottom: 30px;
+  }
+  
+  .sidemenu__nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidemenu__link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .sidemenu__link:hover {
+    background-color: #1f1f1f;
+  }
+  
+  .sidemenu__icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }

@@ -1,0 +1,107 @@
+.process-container {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 95%; /* Adjust the max width as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e50914;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.video-info {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.video-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.process-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.process-form label {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.process-form input[type="text"],
+.process-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  width: 98.3%;
+}
+
+.process-form textarea {
+  resize: vertical; /* Allow vertical resizing */
+  height: 100px; /* Set a default height */
+}
+
+.process-form button {
+  background-color: #e50914;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.process-form button:hover {
+  background-color: #f40612;
+}
+
+/* Updated Loader style for Process Component */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack the circle and text */
+  margin: 20px auto;
+  font-size: 18px; /* Adjust the font size for the text */
+  color: #fff; /* Text color */
+}
+
+.loader-circle {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #e50914; /* Red */
+  border-radius: 50%;
+  width: 60px; /* Larger width */
+  height: 60px; /* Larger height */
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px; /* Space between circle and text */
+}
+
+/* Animation for loader */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
